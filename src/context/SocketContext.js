@@ -13,7 +13,7 @@ const SocketContextProvider = ({ children }) => {
   const location = useLocation();
 
   useEffect(() => {
-    const socket = io('');
+    const socket = io('https://task7-second-gamebackend-production.up.railway.app/');
     setSocket(socket);
 
     socket.on("room:get", (payload) => {
