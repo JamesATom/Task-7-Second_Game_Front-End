@@ -5,7 +5,7 @@ import Result from "./pages/Result";
 import background_img from "./images/background.png";
 import "./App.css";
 
-const App = () => {
+const RockApp = () => {
   return (
     <main className="main">
       <img
@@ -24,4 +24,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default RockApp;

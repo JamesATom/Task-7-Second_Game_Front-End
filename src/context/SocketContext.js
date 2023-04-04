@@ -13,7 +13,7 @@ const SocketContextProvider = ({ children }) => {
   const location = useLocation();
 
   useEffect(() => {
-    const socket = io(process.env.REACT_APP_SOCKET_URL);
+    const socket = io('');
     setSocket(socket);
 
     socket.on("room:get", (payload) => {
@@ -36,7 +36,7 @@ const SocketContextProvider = ({ children }) => {
         let pathname = "/result";
         if (pathname !== location.pathname) navigate(pathname);
       }
-      console.log(payload.players);
+      
     });
   }, []);
 
